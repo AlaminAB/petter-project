@@ -1,0 +1,559 @@
+
+
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,500&display=swap');
+
+/* 
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+*/
+
+
+/************** Default CSS **************/
+
+:root {
+    --body: #fff;
+    --p: #000;
+    --a: #fff;
+    --p: #000;
+    --h: #116dff;
+    --dark: #1F1F20;
+}
+
+body {
+   font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #000;
+    background-color: var(--body);
+}
+
+a,
+.button,
+button {
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+button {
+    cursor: pointer
+}
+
+ul,
+ol {
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    list-style: none
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--h);
+    text-transform: capitalize;
+    margin-top: 0px;
+}
+
+h1 {
+    font-size: 29px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 29px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+em {
+    font-style: italic;
+}
+p {
+   font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 30px;
+    color: var(--p);
+    margin-bottom: 15px;
+}
+
+a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+img{
+    width: 100%;
+    height:100%;
+}
+/* CUSTOM BUTTON  */
+.custom-btn {
+    font-size: 22px;
+    padding: 15px 20px;
+    vertical-align: top;
+    display: inline-block;
+    font-weight: 700;
+    color: #fff;
+    background: #0fd13d;
+    border-radius: 12px;
+    box-shadow: 0 4px 4px rgba(0,0,0,.35)
+}
+.custom-btn:hover {
+    box-shadow: 0 5px 5px rgba(0,0,0,.5);
+    text-decoration: none;
+    color: #fff;
+}
+
+.section-title h2{
+    color: #116dff;
+    padding: 20px;
+    font-size: 29px;
+    font-weight: 700;
+    line-height: 45px;
+}
+.section-title h2:after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    margin-top: 12px;
+    background: #116dff;
+    display: block;
+}
+/************** Default CSS End **************/
+
+
+/* header  */
+header {
+    background: #0097fe;
+    padding: 5px 0px;
+}
+
+header h2 {
+    text-align: center;
+    font-weight: 700;
+    color: #fff;
+    font-size: 28px;
+}
+
+.banner {
+ background-image: url(../img/bg-hero.jpg);
+ background-repeat: no-repeat;
+ background-size: 100% 100%;
+ position: relative;
+ z-index: 0;
+}
+
+.banner-left img {
+    pointer-events: none;
+    width: 115%;
+    margin-bottom: -77%;
+    padding-top: 14%;
+}
+.banner-right{
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    height: 100%;
+    padding: 60px 0px;
+}
+.banner-right:before {
+  content: "";
+    background: url(../img/round.svg) no-repeat;
+    background-size: 73%;
+    margin: -55%;
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+    z-index: -1;
+    transform: translateX(0%);
+}
+
+.banner-right span {
+    display: block;
+    text-align: center;
+    font-size: 36px;
+    color: #fff;
+    font-weight: 700;
+}
+
+span.dis-percent {
+    font-size: 100px;
+    line-height: 85px;
+}
+.banner-right p {
+    font-size: 24px;
+    text-align: center;
+    line-height: 32px;
+    font-weight: 400;
+        color: #fff;
+}
+p.button-bottom {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    padding-top: 15px;
+    text-align: center;
+    color: #fff;
+}
+/* header close  */
+
+/************** Template CSS **************/
+
+
+/* section two */
+.section-two {
+    padding: 40px 0px;
+        background: #f1f4f8 url(../img/virous.jpg) no-repeat 100% 50%;
+    background-size: auto 100%;
+}
+
+.section-two-des h1 {
+    font-size: 28px;
+    text-align: center;
+}
+
+.section-two-des h2 {
+    font-size: 19px;
+    color: #000;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.section-two-des {
+    padding-top: 70px;
+}
+
+.section-two-des ul li {
+font-size: 21px;
+    line-height: 30px;
+    padding: 6px 0 0;
+    background: url(../img/ico-check.png) no-repeat 0 11px;
+    background-repeat: no-repeat;
+    background-size: auto 22px;
+    padding-left: 40px;
+    font-family: sans-serif;
+    text-align: left;
+}
+
+.section-two-des ul {
+    padding-bottom: 40px;
+    padding-left: 110px;
+}
+
+.sectiontwo-cta {
+    text-align: center;
+    padding-bottom: 25px;
+}
+.sectiontwo-cta .small {
+    font-size: 15px;
+    line-height: 17px;
+    padding-bottom: 16px;
+    font-weight: 400;
+}
+
+
+/* gallery sectoin  */
+.gallery-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(-90deg,#0095fe 0,#007dfd 99%);
+    padding: 20px 0px;
+}
+
+.right-gallery-rating {
+    display: flex;
+    color: #fff;
+    padding-left: 200px;
+    align-items: center;
+}
+.right-gallery-rating a {
+    color: #fff;
+    font-size: 20px;
+    padding-left: 20px;
+    line-height: 30px;
+}
+
+.right-gallery-rating a:hover {
+    text-decoration: underline;
+}
+.gallery-img {
+    display: flex;
+}
+
+/* how to use  */
+section.howto-use {
+    padding-top: 20px;
+}
+.img-col {
+    position: relative;
+}
+
+.img-number {
+    position: absolute;
+    left: -40px;
+    bottom: 5px;
+    width: 70px;
+    height: 70px;
+    background: #116dff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 72px;
+    color: #fff;
+}
+.img-col img {
+    border-radius: 50%;
+    width: 85%;
+}
+
+.how-text p {
+    display: inline;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.how-text strong {
+    font-size: 16px;
+}
+
+.how-text {
+    padding-top: 20px;
+    width: 70%;
+    text-align: center;
+}
+
+/* cta area */
+.cta-area h4 {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 700;
+}
+
+.cta-area {
+    text-align: center;
+}
+
+/* footer */
+.footer-menu {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.footer-menu li {
+    display: block;
+    margin: 0 20px;
+    line-height: 27px;
+    text-align: center;
+}
+
+.footer-menu li a {
+    color: #fff;
+    font-size: 14px;
+    display: block;
+}
+
+.footer-widget {
+    background-color: #313233;
+}
+
+.footer-logo img {
+    width: 225px;
+    display: inline-block;
+}
+
+.footer-logo {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.copyright-area {
+    padding: 9px 0;
+}
+
+.copyright-text {
+    font-size: 12px;
+    margin-bottom: 0;
+    color: #313233;
+}
+
+.footer-cards img {
+    height: 20px;
+    width: auto;
+    display: inline-block;
+}
+
+.footer-cards li {
+    display: block;
+    margin: 0 25px;
+}
+
+.footer-cards {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* safegurd area */
+.safegurd-area {
+    background-color: #f1f4f8;
+    padding-bottom: 40px;
+}
+
+.safegurd-area .section-title h2 {
+    padding-left: 0;
+}
+
+.sg-text p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.vrs-img {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    height: 350px;
+    width: auto
+}
+
+.sg-cta p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 22px;
+}
+
+.sg-right h4 {
+    font-size: 16px;
+}
+
+.sgr-img img {
+    width: 100%;
+}
+
+.sg-right h5 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.sgr-img.sf {
+    position: relative;
+    top: -30px;
+    margin-bottom: -45px;
+}
+
+.single-test {
+    background-color: #f6f6f6;
+    border-radius: 14px;
+    border: 1px solid #a2a2a2;
+    padding: 20px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.stest-name h5 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    margin-top: 12px;
+}
+
+.stest-person {
+    margin-right: 10px;
+}
+
+.stest-name p {
+    font-size: 12px;
+    margin: 0;
+    line-height: 1;
+}
+
+.stest-header {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.sicon {
+    margin-left: auto;
+    margin-top: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+.stest-img{
+    padding-top: 5x;
+    padding-bottom: 15px;
+}
+
+.stest-body p {
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.testimonial-wrap .mesonry{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.testimonial-wrap .stest-wr{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: calc(50% - 10px);
+}
+
+.stest-rate img {
+    width: 130px;
+}
+
+.stest-rate {
+    margin-bottom: 5px;
+}
+
+.stest-person img {
+    width: 75px;
+    border-radius: 50%;
+}
