@@ -67,6 +67,18 @@ section.section-two .container {
   .copyright-text {
         font-size: 15px;
     }
+
+.header-container {
+    max-width: 768px;
+    padding: 0px 15px;
+}
+.page-title h2 {
+    font-size: 31px;
+    line-height: 45px;
+    }
+footer.footer-index2 {
+    padding: 30px 20px;
+}
 }
 
 
@@ -216,6 +228,55 @@ section.section-two .container {
         font-size: 26px;
         line-height: 32px;
     }
+
+
+/* index 2 */
+.header-container {
+    max-width: 95%;
+    }
+.page-title h2 {
+    font-size: 27px;
+    line-height: 32px;
+}
+.section-img h3 {
+    font-size: 20px;
+    line-height: 25px;
+}
+.cta-button {
+    font-size: 20px !important;
+    }
+.button-section p {
+    font-size: 14px;
+    line-height: 21px;
+}
+.page-description p {
+    font-size: 16px;
+    line-height: 24px;
+    }
+    footer.footer-index2 {
+    padding: 30px 20px;
+}
+div#stickyCont div {
+    display: block;
+    }
+div#stickyCont div p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+div#stickyCont div a {
+    padding: 5px 10px;
+    font-size: 14px;
+    }
+    div#stickyCont {
+    padding: 10px 0px;
+}
+.copyright-area.pb-4.mb-5 {
+    padding-bottom: 50px !important;
+}
+ul.footer-cards.index2-footer-card {
+    justify-content: center;
+}
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -276,7 +337,35 @@ p.button-bottom {
 .how-text strong {
     font-size: 15px;
 }
+
+
+ul.footer-cards.index2-footer-card li a img {
+    max-width: 40px;
+}
+div#stickyCont div p {
+    font-size: 14px;
+}
+
+.header-left img {
+    width: 100%;
+    max-width: 130px;
+}
+
+.header-right a {
+    text-decoration: none !important;
+    font-size: 14px !important;
+    padding: 5px 9px;
 	}
+.section-img h3 {
+    text-align: justify;
+}
+.page-description p {
+    text-align: justify;
+}
+.button-section a {
+    display: block;
+}
+}
 
 @media (max-width: 480px) { 
     .testimonial-wrap{
